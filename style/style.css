@@ -204,7 +204,7 @@ header {
     width: 500px;
 }
 
-.feedback{
+#feedback{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -321,6 +321,17 @@ border-radius: 12px;
 
 }
 .mostrar#depoimentos-chef{
+    opacity: 1;
+    transition: all 2s;
+    transform: translateX(0);
+}
+.elementos#feedbacks{    
+    opacity: 0;
+    transition: all 2s;
+    transform: translateX(100%);
+
+}
+.mostrar#feedbacks{
     opacity: 1;
     transition: all 2s;
     transform: translateX(0);
