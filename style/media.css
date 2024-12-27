@@ -126,6 +126,9 @@
     #depoimentos{
         flex-direction: column;
     }
+    #depoimentos-chef{
+        width: 500px;
+    }
 }
 @media screen and (max-width:600px){
     #depoimentos-chef{

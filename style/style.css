@@ -18,6 +18,7 @@
 
 body {
     background-color: var(--azul-1);
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -201,7 +202,7 @@ header {
     gap: 48px;
 }
 #depoimentos-chef{
-    width: 500px;
+ width: 1000px;
 }
 
 #feedback{
@@ -292,6 +293,12 @@ border-radius: 12px;
 }
 ::-webkit-scrollbar-track{
     background-color: #2e8be9;
+}
+.elementos{
+
+    overflow-x: hidden; /* Evita a rolagem horizontal no elemento animado */
+
+    
 }
 .elementos#cta{
     opacity: 0;
