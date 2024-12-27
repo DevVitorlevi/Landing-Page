@@ -68,7 +68,6 @@
         height: 100%;
         z-index: 8888;
         opacity: 0;
-        pointer-events: none; /* Impede que o overlay interaja com o mouse enquanto invisível */
         transition: opacity 0.4s ease-in-out; /* A transição de opacidade */
     }
     
