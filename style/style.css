@@ -10,6 +10,9 @@
 body {
     background-color: #e4e8ff;
 }
+section{
+    padding: 28px 8%;
+}
 
 .btn-default {
     border: 0;
@@ -27,4 +30,48 @@ body {
 
 .btn-default:hover {
     background-color: #bac7ff;
+}
+.social-media{
+    display: flex;
+    gap: 20px;
+}
+.social-media a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 45px;
+    height: 40px;
+    font-size: 20px;
+    border-radius:10px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+
+}
+.social-media a:hover{
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+.section-titulo{
+    color: #007fff;
+    font: 1.575rem;
+}
+.section-subtitulo{
+    font-size: 2.2rem;
+}
+::-webkit-scrollbar{
+    background-color: white;
+}
+::-webkit-scrollbar-button{
+    background-color: #afbaf4;
+    color: white;
+}
+::-webkit-scrollbar-thumb{
+background-color: #afbaf4;
+border-radius: 12px;
+}
+::-webkit-scrollbar-track{
+    background-color: #2e8be9;
+
 }

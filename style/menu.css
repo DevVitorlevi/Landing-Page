@@ -1,0 +1,79 @@
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#pratos {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    gap: 24px; /* Espaçamento horizontal entre os pratos */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha, caso necessário */
+
+    margin-top: 32px;
+}
+
+.prato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    gap: 10px;
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.coracao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bac7ff;
+    position: absolute;
+    font-size: 1.5rem;
+    width: 70px;
+    height: 70px;
+    color: #f9f9f9;
+    left: 0;
+    top: -10px;
+    border-bottom-right-radius: 70%;
+}
+.avaliacao{
+    color: gold;
+}
+.avaliacao > span{
+    color: black;
+}
+.price{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+@media screen and (max-width:1024px){
+    #pratos{
+        flex-wrap: wrap;  
+        justify-content: center;  
+    }
+    .prato{
+
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width:600px){
+    .prato{
+
+        width:100%;
+    }
+    #menu .section-subtitulo{
+        text-align: center;
+    }
+}

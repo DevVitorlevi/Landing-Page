@@ -1,6 +1,10 @@
 header {
     width: 100%;
     padding: 28px 8%;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(5px);
+    z-index: 3333;
 }
 
 #nav-bar {
@@ -44,9 +48,29 @@ header {
 @media screen and (max-width:1024px) {
     #mobile-btn {
         display: block;
+        background-color: transparent;
+        border: 0;
+        font-size: 24px;
+        cursor: pointer;
     }
 
-    #nav-list {
+    #nav-list,#nav-bar > .btn-default {
         display: none;
     }
+    #mobile-menu.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mobile-nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+    #mobile-nav-list .nav-item{
+        list-style: none;
+        text-align: center;
+    }
+
 }
