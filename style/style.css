@@ -6,9 +6,18 @@
     box-sizing: border-box;
     font-family: 'Poppins';
 }
+:root{
+    --branco-card:#f9f9f9;
+    --azul-1:#e4e8ff;
+    --azul-2:#bac7ff;
+    --azul-3:#afbaf4;
+    --azul-4:#a0b5ff;
+    --azul-5:#83a3ff;
+    --azul-6:#007fff;
+}
 
 body {
-    background-color: #e4e8ff;
+    background-color: var(--azul-1);
 }
 
 /* Header */
@@ -30,7 +39,7 @@ header {
 
 #nav-logo {
     font-size: 24px;
-    color: #007fff;
+    color: var(--azul-6);
 }
 
 #nav-list {
@@ -48,7 +57,7 @@ header {
 
 .nav-item.active a {
     color: #1d1d1d;
-    border-bottom: 3px solid #83a3ff;
+    border-bottom: 3px solid var(--azul-5);
 }
 
 #mobile-btn {
@@ -80,7 +89,7 @@ header {
     
 }
 #cta span{
-    color: #007fff;
+    color: var(--azul-6);
 }
 #cta-buttons{
     display: flex;
@@ -93,9 +102,9 @@ header {
     display: flex;
     padding: 8px 14px;
     align-items: center;
-    background-color: white;
+    background-color: #fff;
     text-decoration: none;
-    color: black;
+    color: #000;
     gap: 10px;
     font-weight: 500;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
@@ -113,7 +122,7 @@ header {
     z-index: 2222   ;
 }
 .shape{
-    background-color:#bac7ff;
+    background-color:var(--azul-2);
     width: 50%;
     height: 100%;
     position: absolute;
@@ -150,7 +159,7 @@ header {
     align-items: center;
     width: 20%;
     padding: 15px;
-    background-color: #f9f9f9;
+    background-color: var(--branco-card);
     border-radius: 20px;
     gap: 10px;
     box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
@@ -162,21 +171,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #bac7ff;
+    background-color: var(--azul-2);
     position: absolute;
     font-size: 1.5rem;
     width: 70px;
     height: 70px;
-    color: #f9f9f9;
+    color: var(--branco-card);
     left: 0;
     top: -10px;
     border-bottom-right-radius: 70%;
 }
 .avaliacao{
-    color: gold;
+    color: #ffd700;
 }
 .avaliacao > span{
-    color: black;
+    color: #000;
 }
 .price{
     display: flex;
@@ -201,12 +210,12 @@ header {
     align-items: center;
     gap: 10px;
     padding: 12px;
-    background-color: #f9f9f9;
+    background-color:var(--branco-card);
     border-radius: 10px;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
 }
 .feed-content span{
-    color: gold;
+    color: #ffd700;
 }
 /* Footer*/
 footer{
@@ -217,7 +226,7 @@ footer #itens{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
+    color: #fff;
 }
 section{
     padding: 28px 8%;
@@ -228,17 +237,17 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #a0b5ff;
+    background-color: var(--azul-4);
     border-radius: 12px;
     padding: 10px 14px;
     font-weight: 60px;
-    box-shadow: 0px 0px 13px 4px #afbaf4;
+    box-shadow: 0px 0px 13px 4px var(--azul-3);
     cursor: pointer;
     transition: background-color .3s ease;
 }
 
 .btn-default:hover {
-    background-color: #bac7ff;
+    background-color: var(--azul-2);
 }
 .social-media{
     display: flex;
@@ -248,13 +257,13 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: #fff;
     width: 45px;
     height: 40px;
     font-size: 20px;
     border-radius:10px;
     text-decoration: none;
-    color: black;
+    color: #000;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow .3s ease;
 
@@ -263,21 +272,21 @@ section{
     box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
 }
 .section-titulo{
-    color: #007fff;
+    color: var(--azul-6);
     font: 1.575rem;
 }
 .section-subtitulo{
     font-size: 2.2rem;
 }
 ::-webkit-scrollbar{
-    background-color: white;
+    background-color: #fff;
 }
 ::-webkit-scrollbar-button{
-    background-color: #afbaf4;
-    color: white;
+    background-color: var(--azul-3);
+    color: #fff;
 }
 ::-webkit-scrollbar-thumb{
-background-color: #afbaf4;
+background-color: var(--azul-3);
 border-radius: 12px;
 }
 ::-webkit-scrollbar-track{
