@@ -55,12 +55,32 @@ header {
     font-weight: 600;
 
 }
+@keyframes border {
+    from{
+        
+    }
+    to{
 
-.nav-item.active a {
-    color: #1d1d1d;
-    border-bottom: 3px solid var(--azul-5);
+    }
 }
-
+.nav-item{
+    position: relative;
+}
+.nav-item:after{
+    content: '';
+    height: 5px;
+    width: 0px;
+    background-color: var(--azul-5);
+    border-radius: 10px;
+    position: absolute;
+    bottom: -2px;
+    right: 0%;
+    transition: 2s;
+}
+.nav-item:hover:after{
+    width: 100%;
+    left: 0%;
+}
 #mobile-btn {
     display: none;
 }
